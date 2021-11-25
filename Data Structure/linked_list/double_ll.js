@@ -175,7 +175,7 @@ class DoubleLinkedList {
   /**
    * Remove a node at the given index from the linked list
    * @param {Number} index
-   * @returns 0 if successfully removed the node, -1 otherwise.
+   * @returns the current if successfully removed the node, -1 otherwise.
    */
   removeAt(index) {
     let curr = this.head;

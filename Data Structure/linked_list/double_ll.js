@@ -187,6 +187,14 @@ class DoubleLinkedList {
     // return -1 if linked list is empty
     if (curr === null) return -1;
 
+    // Handle cases where there is only 1 element
+    if (this.length === 1 && index === 0) {
+      this.head = null;
+      this.tail = null;
+      this.length -= 1;
+      return this.length;
+    }
+
     // Handle remove the 1st node
     if (index === 0) {
       this.head = curr.next;
@@ -196,7 +204,7 @@ class DoubleLinkedList {
     }
 
     // Handle remove the last node
-    if (index === this.length) {
+    if (index === this.length - 1) {
       this.tail = this.tail.prev;
       this.tail.next = null;
       this.length -= 1;

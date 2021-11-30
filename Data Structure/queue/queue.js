@@ -1,6 +1,7 @@
 "use strict";
 
 import DoubleLinkedList from "../linked_list/double_ll.js";
+
 /** Queue is implemented using Double Linked List */
 class Queue {
   constructor() {
@@ -37,12 +38,14 @@ class Queue {
 let myQueue = new Queue();
 
 // Live's reverse form is evil. Kinda funny.
-myQueue.enqueue("l");
-myQueue.enqueue("i");
-myQueue.enqueue("v");
-myQueue.enqueue("e");
+// myQueue.enqueue("l");
+// myQueue.enqueue("i");
+// myQueue.enqueue("v");
+// myQueue.enqueue("e");
 
-myQueue.print();
-console.log(myQueue.dequeue());
-console.log(myQueue.isEmpty(), myQueue.size());
-myQueue.print();
+// myQueue.print();
+// console.log(myQueue.dequeue());
+// console.log(myQueue.isEmpty(), myQueue.size());
+// myQueue.print();
+
+export default Queue;

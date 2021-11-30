@@ -1,4 +1,5 @@
 class BinarySearchTreeNode:
+    # Each element is a not
     def __init__(self, data): 
         self.data = data
         self.left = None 
@@ -118,7 +119,7 @@ class BinarySearchTreeNode:
             # 2 children: Option2
             max_val = self.right.find_max()
             self.data = max_val 
-            self.right = self.left.delete(max_val)
+            self.left = self.left.delete(max_val)
 
         return self
 
@@ -133,9 +134,9 @@ def build_tree(elems):
 
 
 if __name__ == "__main__":
-    numbers = [17, 4, 1, 20, 9, 23, 18, 34, 18]
+    numbers = [13, 4, 1, 20, 9, 23, 18, 34, 18]
     numbers_tree = build_tree(numbers)
-    print(numbers_tree.delete(34))
+    print(numbers_tree.delete(13))
     print(numbers_tree.in_order_traversal())
     # print(numbers_tree.search(18))
     # print(numbers_tree.find_min())
